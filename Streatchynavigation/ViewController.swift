@@ -8,11 +8,11 @@
 
 import UIKit
 
-enum Direction {
-  case Down
-  case Up
-  case Unknown
-}
+//enum Direction {
+//  case Down
+//  case Up
+//  case Unknown
+//}
 
 class ViewController: UIViewController {
   @IBOutlet weak var jogaBallImageView: UIImageView!
@@ -21,7 +21,7 @@ class ViewController: UIViewController {
   @IBOutlet weak var headerHeightConstraint: NSLayoutConstraint!
   @IBOutlet weak var scrollView: UIScrollView!
   var lastOffset: CGFloat = 0.0
-  var direction = Direction.Unknown
+//  var direction = Direction.Unknown
   var heightSaved: CGFloat = 0.0
   var lastTranslation: CGFloat = 0.0
 
@@ -47,6 +47,7 @@ class ViewController: UIViewController {
 
 extension ViewController: UIScrollViewDelegate {
 
+
   func scrollViewWillBeginDragging(scrollView: UIScrollView) {
     lastOffset = scrollView.contentOffset.y
   }
@@ -57,7 +58,7 @@ extension ViewController: UIScrollViewDelegate {
     if lastOffset > offset { // Down
       if headerHeightConstraint.constant > (heightSaved + 50){ return }
       headerHeightConstraint.constant += translation
-      direction = .Down
+//      direction = .Down
       if translation >= 0 && translation <= 2 { // start transform at 0+1 to avoid a small logo and stop at 2+1 to avoid a big logo
         jogaBallImageView.transform = CGAffineTransformMakeScale(translation+1, translation+1)
         lastTranslation = translation
@@ -76,6 +77,13 @@ extension ViewController: UIScrollViewDelegate {
       }
     }
     headerHeightConstraint.constant += translation
-    direction = .Up
+//    direction = .Up
   }
+
+
+
+
+
+
+
 }
