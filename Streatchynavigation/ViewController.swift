@@ -20,8 +20,15 @@ class ViewController: UIViewController {
   @IBOutlet weak var header: UIView!
   @IBOutlet weak var headerHeightConstraint: NSLayoutConstraint!
   @IBOutlet weak var scrollView: UIScrollView!
+
+  // header Labels
+  @IBOutlet weak var chatLabel: UILabel!
+  @IBOutlet weak var gameLabel: UILabel!
+  @IBOutlet weak var rosterLabel: UILabel!
+
+  @IBOutlet weak var triangleView: Triangle!
+
   var lastOffset: CGFloat = 0.0
-//  var direction = Direction.Unknown
   var heightSaved: CGFloat = 0.0
   var lastTranslation: CGFloat = 0.0
 
@@ -58,7 +65,6 @@ extension ViewController: UIScrollViewDelegate {
     if lastOffset > offset { // Down
       if headerHeightConstraint.constant > (heightSaved + 50){ return }
       headerHeightConstraint.constant += translation
-//      direction = .Down
       if translation >= 0 && translation <= 2 { // start transform at 0+1 to avoid a small logo and stop at 2+1 to avoid a big logo
         jogaBallImageView.transform = CGAffineTransformMakeScale(translation+1, translation+1)
         lastTranslation = translation
@@ -77,7 +83,6 @@ extension ViewController: UIScrollViewDelegate {
       }
     }
     headerHeightConstraint.constant += translation
-//    direction = .Up
   }
 
 

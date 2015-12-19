@@ -22,7 +22,53 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7MR-wR-CsP">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qui-fe-tfW">
+                                                <rect key="frame" x="46" y="15" width="38" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywx-R2-7fh">
+                                                <rect key="frame" x="134" y="15" width="47" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roster" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEF-Ey-HSh">
+                                                <rect key="frame" x="219" y="15" width="53" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BTV-hb-Ovy" customClass="Triangle" customModule="Streatchynavigation" customModuleProvider="target">
+                                                <rect key="frame" x="54" y="41" width="22" height="10"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="22" id="U42-R9-6df"/>
+                                                    <constraint firstAttribute="height" constant="10" id="oE9-My-SNy"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
                                         <color key="backgroundColor" red="0.16078431369999999" green="0.12941176469999999" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="MEF-Ey-HSh" secondAttribute="trailing" constant="48" id="7eD-Xb-xEV"/>
+                                            <constraint firstAttribute="bottom" secondItem="ywx-R2-7fh" secondAttribute="bottom" constant="14" id="8Q2-FV-4W6"/>
+                                            <constraint firstAttribute="bottom" secondItem="BTV-hb-Ovy" secondAttribute="bottom" constant="-1" id="9Q2-Pe-wh2"/>
+                                            <constraint firstAttribute="bottom" secondItem="BTV-hb-Ovy" secondAttribute="bottom" id="D8x-W1-DD4"/>
+                                            <constraint firstItem="BTV-hb-Ovy" firstAttribute="top" secondItem="qui-fe-tfW" secondAttribute="bottom" constant="5" id="Q2s-2w-TNK"/>
+                                            <constraint firstItem="qui-fe-tfW" firstAttribute="leading" secondItem="7MR-wR-CsP" secondAttribute="leading" constant="46" id="Qil-QH-WtF"/>
+                                            <constraint firstItem="BTV-hb-Ovy" firstAttribute="leading" secondItem="7MR-wR-CsP" secondAttribute="leading" constant="54" id="UsF-cZ-sKf"/>
+                                            <constraint firstItem="ywx-R2-7fh" firstAttribute="leading" secondItem="qui-fe-tfW" secondAttribute="trailing" constant="50" id="gea-l3-trF"/>
+                                            <constraint firstAttribute="trailing" secondItem="BTV-hb-Ovy" secondAttribute="trailing" constant="244" id="h03-Ry-NN7"/>
+                                            <constraint firstAttribute="bottom" secondItem="MEF-Ey-HSh" secondAttribute="bottom" constant="14" id="lRW-Sw-3dl"/>
+                                            <constraint firstItem="MEF-Ey-HSh" firstAttribute="leading" secondItem="ywx-R2-7fh" secondAttribute="trailing" constant="38" id="pMp-oj-mBj"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="D8x-W1-DD4"/>
+                                            </mask>
+                                        </variation>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -43,7 +89,7 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bv9-TE-4LE">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="968"/>
-                                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="968" id="Dqa-Fg-nbd"/>
                                                 </constraints>
@@ -54,7 +100,7 @@
                                             <constraint firstItem="Bv9-TE-4LE" firstAttribute="top" secondItem="imZ-6P-b9Q" secondAttribute="top" id="iHl-av-vnO"/>
                                             <constraint firstItem="Bv9-TE-4LE" firstAttribute="width" secondItem="imZ-6P-b9Q" secondAttribute="width" id="ieC-Vu-Vtq"/>
                                             <constraint firstAttribute="trailing" secondItem="Bv9-TE-4LE" secondAttribute="trailing" id="lFL-Vo-Tzr"/>
-                                            <constraint firstAttribute="bottom" secondItem="Bv9-TE-4LE" secondAttribute="bottom" id="zi5-Co-qOG"/>
+                                            <constraint firstAttribute="bottom" secondItem="Bv9-TE-4LE" secondAttribute="bottom" constant="-14" id="zi5-Co-qOG"/>
                                         </constraints>
                                     </scrollView>
                                 </subviews>
@@ -107,12 +153,16 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="1068"/>
                     <connections>
+                        <outlet property="chatLabel" destination="qui-fe-tfW" id="a7f-YR-e8k"/>
                         <outlet property="contentView" destination="8bC-Xf-vdC" id="Lx3-NV-jLE"/>
+                        <outlet property="gameLabel" destination="ywx-R2-7fh" id="mta-gX-MFO"/>
                         <outlet property="header" destination="7MR-wR-CsP" id="ltJ-11-CLg"/>
                         <outlet property="headerHeightConstraint" destination="2AK-sE-ybb" id="0Qu-xP-9kb"/>
                         <outlet property="headerScrollView" destination="vpY-yf-Fgd" id="xPl-6L-SHz"/>
                         <outlet property="jogaBallImageView" destination="5Eh-bf-Kfc" id="Lbh-jr-gWW"/>
+                        <outlet property="rosterLabel" destination="MEF-Ey-HSh" id="ZNE-BC-jaa"/>
                         <outlet property="scrollView" destination="imZ-6P-b9Q" id="xXF-AQ-E3p"/>
+                        <outlet property="triangleView" destination="BTV-hb-Ovy" id="bI8-8L-Wll"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -124,6 +174,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZoQ-Bc-9wD" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="E7z-Ob-vP0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
